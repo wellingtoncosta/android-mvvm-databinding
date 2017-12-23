@@ -5,6 +5,9 @@ import android.os.Bundle;
 
 import br.com.wellingtoncosta.amd.R;
 
+/**
+ * @author Wellington Costa on 22/12/2017.
+ */
 public class MainActivity extends AppCompatActivity {
 
     @Override
