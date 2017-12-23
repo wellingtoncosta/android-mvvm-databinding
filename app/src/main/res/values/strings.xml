@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Android MVVM Databinding</string>
+    <string name="colors">Colors</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="users">Users</string>
 </resources>

@@ -4,6 +4,7 @@ import java.util.List;
 
 import br.com.wellingtoncosta.amd.domain.Color;
 import br.com.wellingtoncosta.amd.domain.User;
+import br.com.wellingtoncosta.amd.domain.response.ApiListResponse;
 import io.reactivex.Observable;
 import retrofit2.http.GET;
 import retrofit2.http.Query;
@@ -14,9 +15,9 @@ import retrofit2.http.Query;
 public interface Api {
 
     @GET("users")
-    Observable<List<User>> fetchUsers(@Query("page") int page);
+    Observable<ApiListResponse<User>> fetchUsers(@Query("page") int page);
 
     @GET("unknown")
-    Observable<List<Color>> fetchColors(@Query("page") int page);
+    Observable<ApiListResponse<Color>> fetchColors(@Query("page") int page);
 
 }
