@@ -4,7 +4,7 @@ import javax.inject.Inject;
 
 import br.com.wellingtoncosta.amd.base.BaseViewModel;
 import br.com.wellingtoncosta.amd.data.Api;
-import br.com.wellingtoncosta.amd.di.DependencyInjector;
+import br.com.wellingtoncosta.amd.di.AppInjector;
 import br.com.wellingtoncosta.amd.domain.User;
 import br.com.wellingtoncosta.amd.domain.response.Response;
 import io.reactivex.android.schedulers.AndroidSchedulers;
@@ -19,7 +19,7 @@ public class ListUsersViewModel extends BaseViewModel<User> {
    Api api;
 
    public ListUsersViewModel() {
-       DependencyInjector.applicationComponent().inject(this);
+       AppInjector.applicationComponent().inject(this);
    }
 
    @Override

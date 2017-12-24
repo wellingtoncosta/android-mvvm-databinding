@@ -6,11 +6,11 @@ import br.com.wellingtoncosta.amd.di.component.DaggerApplicationComponent;
 import br.com.wellingtoncosta.amd.di.module.NetworkModule;
 
 /**
- * @author Wellington Costa on 23/12/2017.
+ * @author Wellington Costa on 24/12/2017.
  */
-public class DependencyInjector {
+public class AppInjector {
 
-    private DependencyInjector() { }
+    private AppInjector() { };
 
     private static ApplicationComponent applicationComponent;
 

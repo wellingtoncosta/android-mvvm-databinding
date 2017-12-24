@@ -2,7 +2,6 @@ package br.com.wellingtoncosta.amd.ui.users;
 
 import android.databinding.BindingAdapter;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 
 import com.facebook.drawee.generic.RoundingParams;
 import com.facebook.drawee.view.SimpleDraweeView;

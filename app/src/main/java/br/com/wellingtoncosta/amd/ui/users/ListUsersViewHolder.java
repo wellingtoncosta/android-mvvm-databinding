@@ -9,7 +9,7 @@ import br.com.wellingtoncosta.amd.databinding.ListUsersItemBinding;
 /**
  * @author Wellington Costa on 23/12/2017.
  */
-class ListUsersViewHolder extends RecyclerView.ViewHolder {
+public class ListUsersViewHolder extends RecyclerView.ViewHolder {
 
     private final ListUsersItemBinding binding;
 
