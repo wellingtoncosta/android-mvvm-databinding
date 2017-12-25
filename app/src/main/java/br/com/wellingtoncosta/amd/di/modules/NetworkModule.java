@@ -1,11 +1,10 @@
-package br.com.wellingtoncosta.amd.di.module;
+package br.com.wellingtoncosta.amd.di.modules;
 
 import java.util.concurrent.TimeUnit;
 
 import javax.inject.Singleton;
 
 import br.com.wellingtoncosta.amd.BuildConfig;
-import br.com.wellingtoncosta.amd.data.Api;
 import dagger.Module;
 import dagger.Provides;
 import okhttp3.OkHttpClient;
@@ -23,7 +22,7 @@ public class NetworkModule {
 
     @Provides
     @Singleton
-    OkHttpClient providesOkHttpClient() {
+    OkHttpClient provideOkHttpClient() {
         return new OkHttpClient.Builder()
                 .connectTimeout(CONNECT_TIMEOUT, TimeUnit.MILLISECONDS)
                 .build();
@@ -31,19 +30,13 @@ public class NetworkModule {
 
     @Provides
     @Singleton
-    Retrofit providesRetrofit(OkHttpClient okHttpClient) {
+    Retrofit provideRetrofit(OkHttpClient okHttpClient) {
         return new Retrofit.Builder()
                 .baseUrl(BuildConfig.API_URL)
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(okHttpClient)
                 .build();
-    }
-
-    @Provides
-    @Singleton
-    Api providesApi(Retrofit retrofit) {
-        return retrofit.create(Api.class);
     }
 
 }

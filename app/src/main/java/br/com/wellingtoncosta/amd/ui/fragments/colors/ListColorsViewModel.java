@@ -1,10 +1,9 @@
-package br.com.wellingtoncosta.amd.ui.colors;
+package br.com.wellingtoncosta.amd.ui.fragments.colors;
 
 import javax.inject.Inject;
 
-import br.com.wellingtoncosta.amd.base.BaseViewModel;
+import br.com.wellingtoncosta.amd.ui.base.BaseViewModel;
 import br.com.wellingtoncosta.amd.data.Api;
-import br.com.wellingtoncosta.amd.di.AppInjector;
 import br.com.wellingtoncosta.amd.domain.Color;
 import br.com.wellingtoncosta.amd.domain.response.Response;
 import io.reactivex.android.schedulers.AndroidSchedulers;
@@ -15,11 +14,11 @@ import io.reactivex.schedulers.Schedulers;
  */
 public class ListColorsViewModel extends BaseViewModel<Color> {
 
-    @Inject
-    Api api;
+    private Api api;
 
-    public ListColorsViewModel() {
-        AppInjector.applicationComponent().inject(this);
+    @Inject
+    ListColorsViewModel(Api api) {
+        this.api = api;
     }
 
     @Override

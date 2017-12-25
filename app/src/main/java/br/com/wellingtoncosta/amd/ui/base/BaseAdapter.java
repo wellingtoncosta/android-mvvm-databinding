@@ -1,4 +1,4 @@
-package br.com.wellingtoncosta.amd.base;
+package br.com.wellingtoncosta.amd.ui.base;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.ViewGroup;

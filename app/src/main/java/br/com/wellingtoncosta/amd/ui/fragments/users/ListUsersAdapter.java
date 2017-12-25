@@ -1,4 +1,4 @@
-package br.com.wellingtoncosta.amd.ui.users;
+package br.com.wellingtoncosta.amd.ui.fragments.users;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import java.util.List;
 
 import br.com.wellingtoncosta.amd.R;
-import br.com.wellingtoncosta.amd.base.BaseAdapter;
+import br.com.wellingtoncosta.amd.ui.base.BaseAdapter;
 import br.com.wellingtoncosta.amd.databinding.ListUsersItemBinding;
 import br.com.wellingtoncosta.amd.domain.User;
 

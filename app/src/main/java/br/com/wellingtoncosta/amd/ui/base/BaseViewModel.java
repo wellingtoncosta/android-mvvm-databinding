@@ -1,4 +1,4 @@
-package br.com.wellingtoncosta.amd.base;
+package br.com.wellingtoncosta.amd.ui.base;
 
 import android.arch.lifecycle.MutableLiveData;
 import android.arch.lifecycle.ViewModel;

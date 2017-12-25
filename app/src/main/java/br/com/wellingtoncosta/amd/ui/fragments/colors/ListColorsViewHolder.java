@@ -1,4 +1,4 @@
-package br.com.wellingtoncosta.amd.ui.colors;
+package br.com.wellingtoncosta.amd.ui.fragments.colors;
 
 import android.databinding.DataBindingUtil;
 import android.support.v7.widget.RecyclerView;

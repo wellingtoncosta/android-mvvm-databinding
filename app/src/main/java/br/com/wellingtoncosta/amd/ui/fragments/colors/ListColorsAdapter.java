@@ -1,4 +1,4 @@
-package br.com.wellingtoncosta.amd.ui.colors;
+package br.com.wellingtoncosta.amd.ui.fragments.colors;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import java.util.List;
 
 import br.com.wellingtoncosta.amd.R;
-import br.com.wellingtoncosta.amd.base.BaseAdapter;
+import br.com.wellingtoncosta.amd.ui.base.BaseAdapter;
 import br.com.wellingtoncosta.amd.databinding.ListColorsItemBinding;
 import br.com.wellingtoncosta.amd.domain.Color;
 

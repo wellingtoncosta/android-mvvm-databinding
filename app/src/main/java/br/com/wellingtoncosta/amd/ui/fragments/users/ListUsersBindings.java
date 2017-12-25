@@ -1,4 +1,4 @@
-package br.com.wellingtoncosta.amd.ui.users;
+package br.com.wellingtoncosta.amd.ui.fragments.users;
 
 import android.databinding.BindingAdapter;
 import android.support.v7.widget.RecyclerView;
