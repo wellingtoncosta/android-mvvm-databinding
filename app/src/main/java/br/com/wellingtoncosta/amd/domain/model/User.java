@@ -19,6 +19,14 @@ public class User {
     @SerializedName("avatar")
     private String avatarUrl;
 
+    public User() { }
+
+    public User(Integer id, String firstName, String lastName, String avatarUrl) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.avatarUrl = avatarUrl;
+    }
 
     public Integer getId() {
         return id;

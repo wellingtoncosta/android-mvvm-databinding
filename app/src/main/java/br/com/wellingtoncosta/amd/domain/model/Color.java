@@ -19,6 +19,15 @@ public class Color {
     @SerializedName("color")
     private String color;
 
+    public Color() { }
+
+    public Color(Integer id, String name, Integer year, String color) {
+        this.id = id;
+        this.name = name;
+        this.year = year;
+        this.color = color;
+    }
+
     public Integer getId() {
         return id;
     }

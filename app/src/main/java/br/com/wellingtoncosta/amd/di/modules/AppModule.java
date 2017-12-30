@@ -5,6 +5,8 @@ import javax.inject.Singleton;
 import br.com.wellingtoncosta.amd.data.remote.Api;
 import br.com.wellingtoncosta.amd.domain.repository.ColorRepository;
 import br.com.wellingtoncosta.amd.domain.repository.UserRepository;
+import br.com.wellingtoncosta.amd.util.schedulers.BaseScheduler;
+import br.com.wellingtoncosta.amd.util.schedulers.SchedulerProvider;
 import dagger.Module;
 import dagger.Provides;
 import retrofit2.Retrofit;
@@ -31,6 +33,12 @@ public class AppModule {
     @Singleton
     ColorRepository provideColorRepository(Api api) {
         return new ColorRepository(api);
+    }
+
+    @Provides
+    @Singleton
+    BaseScheduler provideSchedulerProvider() {
+        return new SchedulerProvider();
     }
 
 }

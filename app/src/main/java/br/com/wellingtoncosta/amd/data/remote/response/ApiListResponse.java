@@ -24,6 +24,12 @@ public class ApiListResponse<T> {
     @SerializedName("data")
     private List<T> data;
 
+    public ApiListResponse() { }
+
+    public ApiListResponse(List<T> data) {
+        this.data = data;
+    }
+
     public Integer getPage() {
         return page;
     }

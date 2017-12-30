@@ -8,26 +8,28 @@ import br.com.wellingtoncosta.amd.data.remote.response.Response;
 import br.com.wellingtoncosta.amd.domain.model.User;
 import br.com.wellingtoncosta.amd.domain.repository.UserRepository;
 import br.com.wellingtoncosta.amd.ui.base.BaseViewModel;
-import io.reactivex.android.schedulers.AndroidSchedulers;
-import io.reactivex.schedulers.Schedulers;
+import br.com.wellingtoncosta.amd.util.schedulers.BaseScheduler;
 
 /**
  * @author Wellington Costa on 22/12/2017.
  */
 public class ListUsersViewModel extends BaseViewModel<List<User>> {
 
-   private UserRepository userRepository;
+    private UserRepository userRepository;
+
+    private BaseScheduler scheduler;
 
     @Inject
-    ListUsersViewModel(UserRepository userRepository) {
+    public ListUsersViewModel(UserRepository userRepository, BaseScheduler scheduler) {
        this.userRepository = userRepository;
+       this.scheduler = scheduler;
    }
 
-   @Override
+    @Override
     public void loadData() {
        userRepository.getUsers()
-                .subscribeOn(Schedulers.newThread())
-                .observeOn(AndroidSchedulers.mainThread())
+                .subscribeOn(scheduler.io())
+                .observeOn(scheduler.ui())
                 .doOnSubscribe(s -> loadingStatus.setValue(true))
                 .doAfterTerminate(() -> loadingStatus.setValue(false))
                 .subscribe(
