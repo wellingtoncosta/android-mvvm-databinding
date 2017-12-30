@@ -1,7 +1,6 @@
 package br.com.wellingtoncosta.amd.di.modules;
 
-import br.com.wellingtoncosta.amd.ui.activities.main.MainActivity;
-import br.com.wellingtoncosta.amd.ui.activities.main.MainActivityModule;
+import br.com.wellingtoncosta.amd.ui.MainActivity;
 import dagger.Module;
 import dagger.android.ContributesAndroidInjector;
 
@@ -11,7 +10,7 @@ import dagger.android.ContributesAndroidInjector;
 @Module
 public interface ActivityBuildersModule {
 
-    @ContributesAndroidInjector(modules = {FragmentBuildersModule.class, MainActivityModule.class})
+    @ContributesAndroidInjector(modules = {FragmentBuildersModule.class})
     MainActivity contributeMainActivity();
 
 }

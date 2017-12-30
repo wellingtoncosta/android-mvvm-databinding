@@ -5,7 +5,7 @@
 
     <data>
         <import type="java.util.List" />
-        <import type="br.com.wellingtoncosta.amd.domain.Color" />
+        <import type="br.com.wellingtoncosta.amd.domain.model.Color" />
 
         <variable name="colors" type="List&lt;Color&gt;"/>
     </data>

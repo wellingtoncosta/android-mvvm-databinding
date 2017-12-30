@@ -4,9 +4,9 @@ import android.arch.lifecycle.ViewModel;
 import android.arch.lifecycle.ViewModelProvider;
 
 import br.com.wellingtoncosta.amd.di.keys.ViewModelKey;
-import br.com.wellingtoncosta.amd.ui.ViewModelFactory;
-import br.com.wellingtoncosta.amd.ui.fragments.colors.ListColorsViewModel;
-import br.com.wellingtoncosta.amd.ui.fragments.users.ListUsersViewModel;
+import br.com.wellingtoncosta.amd.ui.common.ViewModelFactory;
+import br.com.wellingtoncosta.amd.ui.colors.ListColorsViewModel;
+import br.com.wellingtoncosta.amd.ui.users.ListUsersViewModel;
 import dagger.Binds;
 import dagger.Module;
 import dagger.multibindings.IntoMap;

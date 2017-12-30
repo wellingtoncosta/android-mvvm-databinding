@@ -3,7 +3,7 @@ package br.com.wellingtoncosta.amd.ui.base;
 import android.arch.lifecycle.MutableLiveData;
 import android.arch.lifecycle.ViewModel;
 
-import br.com.wellingtoncosta.amd.domain.response.Response;
+import br.com.wellingtoncosta.amd.data.remote.response.Response;
 
 /**
  * @author Wellington Costa on 23/12/2017.

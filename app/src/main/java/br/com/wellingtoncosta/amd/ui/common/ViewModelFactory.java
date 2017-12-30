@@ -1,4 +1,4 @@
-package br.com.wellingtoncosta.amd.ui;
+package br.com.wellingtoncosta.amd.ui.common;
 
 import android.arch.lifecycle.ViewModel;
 import android.arch.lifecycle.ViewModelProvider;

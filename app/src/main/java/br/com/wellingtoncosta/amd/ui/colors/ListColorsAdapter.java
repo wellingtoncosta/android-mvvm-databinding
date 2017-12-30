@@ -1,4 +1,4 @@
-package br.com.wellingtoncosta.amd.ui.fragments.colors;
+package br.com.wellingtoncosta.amd.ui.colors;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -9,7 +9,7 @@ import java.util.List;
 import br.com.wellingtoncosta.amd.R;
 import br.com.wellingtoncosta.amd.ui.base.BaseAdapter;
 import br.com.wellingtoncosta.amd.databinding.ListColorsItemBinding;
-import br.com.wellingtoncosta.amd.domain.Color;
+import br.com.wellingtoncosta.amd.domain.model.Color;
 
 /**
  * @author Wellington Costa on 24/12/2017.

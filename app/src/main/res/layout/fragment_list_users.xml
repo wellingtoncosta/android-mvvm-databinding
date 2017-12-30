@@ -5,7 +5,7 @@
 
     <data>
         <import type="java.util.List" />
-        <import type="br.com.wellingtoncosta.amd.domain.User" />
+        <import type="br.com.wellingtoncosta.amd.domain.model.User" />
 
         <variable name="users" type="List&lt;User&gt;"/>
     </data>

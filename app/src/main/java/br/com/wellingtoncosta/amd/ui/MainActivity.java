@@ -1,4 +1,4 @@
-package br.com.wellingtoncosta.amd.ui.activities.main;
+package br.com.wellingtoncosta.amd.ui;
 
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
@@ -6,9 +6,9 @@ import android.support.v7.app.ActionBar;
 
 import br.com.wellingtoncosta.amd.R;
 import br.com.wellingtoncosta.amd.databinding.ActivityMainBinding;
-import br.com.wellingtoncosta.amd.ui.ViewPagerAdapter;
-import br.com.wellingtoncosta.amd.ui.fragments.colors.ListColorsFragment;
-import br.com.wellingtoncosta.amd.ui.fragments.users.ListUsersFragment;
+import br.com.wellingtoncosta.amd.ui.common.ViewPagerAdapter;
+import br.com.wellingtoncosta.amd.ui.colors.ListColorsFragment;
+import br.com.wellingtoncosta.amd.ui.users.ListUsersFragment;
 import dagger.android.support.DaggerAppCompatActivity;
 
 /**

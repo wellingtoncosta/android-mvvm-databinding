@@ -1,4 +1,4 @@
-package br.com.wellingtoncosta.amd.ui;
+package br.com.wellingtoncosta.amd.ui.common;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;

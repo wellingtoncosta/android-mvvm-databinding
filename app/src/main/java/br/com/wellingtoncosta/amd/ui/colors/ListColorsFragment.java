@@ -1,20 +1,23 @@
-package br.com.wellingtoncosta.amd.ui.fragments.colors;
+package br.com.wellingtoncosta.amd.ui.colors;
 
 import android.arch.lifecycle.ViewModelProvider;
 import android.arch.lifecycle.ViewModelProviders;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.Snackbar;
 import android.support.v7.widget.LinearLayoutManager;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import javax.inject.Inject;
 
+import br.com.wellingtoncosta.amd.BuildConfig;
 import br.com.wellingtoncosta.amd.R;
 import br.com.wellingtoncosta.amd.databinding.FragmentListColorsBinding;
-import br.com.wellingtoncosta.amd.domain.response.Status;
+import br.com.wellingtoncosta.amd.data.remote.response.Status;
 import dagger.android.support.DaggerFragment;
 
 /**
@@ -65,6 +68,11 @@ public class ListColorsFragment extends DaggerFragment {
             if(response != null && response.status == Status.SUCCESS) {
                 binding.setColors(response.data);
                 binding.executePendingBindings();
+            }  else {
+                if ((response != null && response.status == Status.ERROR) && BuildConfig.DEBUG) {
+                    Log.e("get users error", String.valueOf(response.throwable));
+                }
+                Snackbar.make(binding.getRoot(), R.string.load_data_error, Snackbar.LENGTH_LONG).show();
             }
         });
     }

@@ -1,4 +1,4 @@
-package br.com.wellingtoncosta.amd.domain;
+package br.com.wellingtoncosta.amd.domain.model;
 
 import com.google.gson.annotations.SerializedName;
 

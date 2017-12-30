@@ -1,4 +1,4 @@
-package br.com.wellingtoncosta.amd.ui.fragments.users;
+package br.com.wellingtoncosta.amd.ui.users;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -9,7 +9,7 @@ import java.util.List;
 import br.com.wellingtoncosta.amd.R;
 import br.com.wellingtoncosta.amd.ui.base.BaseAdapter;
 import br.com.wellingtoncosta.amd.databinding.ListUsersItemBinding;
-import br.com.wellingtoncosta.amd.domain.User;
+import br.com.wellingtoncosta.amd.domain.model.User;
 
 /**
  * @author Wellington Costa on 23/12/2017.
