@@ -9,11 +9,8 @@ android {
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
-
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
+        testInstrumentationRunner "br.com.wellingtoncosta.amd.TestAppRunner"
         vectorDrawables.useSupportLibrary = true
-
         buildConfigField("String", "API_URL", "\"https://reqres.in/api/\"")
     }
     dataBinding {

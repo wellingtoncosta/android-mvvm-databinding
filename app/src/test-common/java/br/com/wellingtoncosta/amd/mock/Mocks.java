@@ -25,7 +25,7 @@ public class Mocks {
         List<Color> colors = new ArrayList<>();
 
         colors.add(new Color(1, "Red", 2000, "#FF0000"));
-        colors.add(new Color(2, "Green", 2001, "00FF00"));
+        colors.add(new Color(2, "Green", 2001, "#00FF00"));
         colors.add(new Color(3, "Blue", 2002, "#0000FF"));
 
         return colors;
