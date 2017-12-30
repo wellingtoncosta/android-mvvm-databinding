@@ -1,3 +1,3 @@
 # android-mvvm-databinding
 
-Simple Android project using MVVM + Data Binding + Retrofit + RxJava.
+A simple Android application project using MVVM + Data Binding + Retrofit + RxJava.
