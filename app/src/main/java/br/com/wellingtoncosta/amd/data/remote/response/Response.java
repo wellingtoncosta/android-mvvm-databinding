@@ -1,6 +1,5 @@
 package br.com.wellingtoncosta.amd.data.remote.response;
 
-import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 
 import static br.com.wellingtoncosta.amd.data.remote.response.Status.ERROR;
@@ -11,8 +10,7 @@ import static br.com.wellingtoncosta.amd.data.remote.response.Status.SUCCESS;
  */
 public class Response<T> {
 
-    @NonNull
-    public final Status status;
+    public final int status;
 
     @Nullable
     public final T data;
@@ -20,7 +18,7 @@ public class Response<T> {
     @Nullable
     public final Throwable throwable;
 
-    private Response(@NonNull Status status, @Nullable T data, @Nullable Throwable throwable) {
+    private Response(int status, @Nullable T data, @Nullable Throwable throwable) {
         this.status = status;
         this.data = data;
         this.throwable = throwable;
